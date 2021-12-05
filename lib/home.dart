@@ -108,6 +108,9 @@ class _HomeState extends State<Home> with WidgetsBindingObserver {
                 padding: EdgeInsets.fromLTRB(18.0, 12.0, 18.0, 18.0),
                 child: TextFormField(
                   initialValue: number,
+                  inputFormatters: [
+                    LengthLimitingTextInputFormatter(10)
+                  ],
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 24.0
@@ -160,7 +163,8 @@ class _HomeState extends State<Home> with WidgetsBindingObserver {
                     style: TextStyle(
                       fontSize: 12.0,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white70,
+                      color: Colors.redAccent,
+                      letterSpacing: 1.0
                     ),
                   ),
                   subtitle: Text(
