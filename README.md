@@ -1,4 +1,4 @@
-# whatsapp_plus
+# whatsapp_direct
 
 A new Flutter project.
 
